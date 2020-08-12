@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block action %}"/addPaperReq"{% endblock %}
+{% block function %}"Add"{% endblock %}
+{% block fields %}
+    <br>
+    Title:
+    <br>
+    <input type="text" class="form-control" name="title">
+    <br>
+    Abstract:
+    <br>
+    <textarea class="form-control" name="abstract" ></textarea>
+    <br>
+    Authors(Please separate with comma):
+    <br>
+    <textarea class="form-control" name="authors"></textarea>
+    <br>
+    Topics(Please separate with comma):
+    <br>
+    <textarea class="form-control" name="topics"></textarea>
+    <br>
+    Result:
+    <br>
+    <input type="number" class="form-control" name="result">
+    <br>
+
+{% endblock %}

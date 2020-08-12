@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+{{ success }}
+<table border="1">
+    <thead>
+        <tr>
+        {% block table_head %}{% endblock %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            {% for col in cols %}
+            <td>{{ item[col] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

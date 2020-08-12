@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block action %}"/updateAuthorReq"{% endblock %}
+{% block function %}"Update"{% endblock %}
+{% block fields %}
+    <br>
+    Old Name:
+    <br>
+    <input type="text" class="form-control" name="old_name">
+    <br>
+    Old Surname:
+    <br>
+    <input type="text" class="form-control" name="old_surname">
+    <br>
+    Name:
+    <br>
+    <input type="text" class="form-control" name="new_name">
+    <br>
+    Surname:
+    <br>
+    <input type="text" class="form-control" name="new_surname">
+    <br>
+{% endblock %}

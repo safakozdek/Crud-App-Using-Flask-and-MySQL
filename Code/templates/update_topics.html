@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block action %}"/updateTopicReq"{% endblock %}
+{% block function %}"Update"{% endblock %}
+{% block fields %}
+    <br>
+    Old Topic Name:
+    <br>
+    <input type="text" class="form-control" name="old_name">
+    <br>
+    New Topic Surname:
+    <br>
+    <input type="text" class="form-control" name="new_name">
+    <br>
+{% endblock %}
